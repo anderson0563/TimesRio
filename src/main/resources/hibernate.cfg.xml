@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:8889/Futebol</property>
+        <property name="connection.username">torcedor</property>
+        <property name="connection.password">senha</property>
+        <property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="use_sql_comments">false</property>
+        <property name="org.hibernate.transaction">false</property>
+        <property name="show_sql">false</property>
+        <property name="hibernate.format_sql">false</property>
+        <property name="current_session_context_class">thread</property>
+        <mapping resource="Times.hbm.xml"/>
+
+    </session-factory>
+</hibernate-configuration>
